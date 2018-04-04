@@ -1,0 +1,257 @@
+/*
+
+Theme Name: ZFC
+
+Template: sputznik-core-wp-theme 
+
+Theme URI: http://sputznik.com
+
+Description: Responsive one page WP theme for Zero Fatality Corridor.
+
+Version: 4.4
+
+Author: Meenu Maria (Sputznik)
+
+Author URI: http://sputznik.com
+
+*/
+/* CSS Document */
+
+body{
+	color: #2b2b2a;
+}
+img.alignnone {float:none; margin: 1em 0 ;}
+img.alignleft {float:left; margin: 1em 1em 1em 0px;}
+img.aligncenter {display:block; float:none; margin: 1em auto;}
+img.alignright {float:right; margin: 1em 0 1em 1em;}
+
+a{
+	color: inherit;
+	line-height: normal;
+}
+.no-gutter , #footer-sidebar4 ul {
+    padding-right:0;
+    padding-left:0;
+}
+.top-buffer, footer div[class*='col-'] h4 , #services-section .sow-more-text{ margin-top: 2em !important;}
+.bottom-buffer,footer div[class*='col-'] h4,footer div[class*='col-'] h4 + a img { margin-bottom: 2em !important; }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.white-bg {
+    background-color: #fff;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b3b3b3;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+.navbar-toggle .icon-bar,#bs-example-navbar-collapse-1 li.active>a, #bs-example-navbar-collapse-1 li.active>a:focus, #bs-example-navbar-collapse-1 li.active>a:hover{
+	background: #f32330;
+	color: #fff;
+}
+footer{
+	background: #000;
+	color: #fff;
+}
+#footer-sidebar3 .sow-features-feature{
+	width: auto !important;
+    margin-left: 12px;
+	margin-bottom: 0;
+}
+#footer-sidebar3 .sow-features-feature .textwidget{
+	margin-left: 1em;
+}
+#footer-sidebar3 .sow-icon-fontawesome{
+	top: 18px;
+}
+#footer-sidebar4 li, footer .widget-title{
+	list-style: none;
+	text-transform: uppercase;
+}
+#footer-sidebar4  .sow-features-list{
+	margin: 0;
+}
+#footer-sidebar4  .sow-features-list .sow-features-feature{
+	width: auto !important;
+    padding: 0 5px;
+}
+
+.container-fluid{
+	padding: 1% 10% 1% 10%;
+}
+.copyright{
+	background: #bd1721;
+}
+.rounded{
+	border-radius:50%;
+	width: 2.5em;
+	height: 2.5em;
+	line-height: 2.5em;
+	margin-right: 0.5em;
+	text-align: center;
+}
+.twitter-blue{
+    background-color: #1dcaff;
+}
+.fb-blue{	
+    background-color: #3b5998;
+}
+.linkedin-blue{	
+    background-color: #0077b5;
+}
+.rounded a:hover,.rounded a:focus{
+	color: #fff;
+}
+.contact-details span{
+	margin-left: 1em;
+}
+.red-text,a:focus,a:hover,#footer-sidebar3 .sow-features-feature .textwidget a:hover{
+	color: #f32330;	
+	text-decoration: none;
+}
+.grey-text{
+	color: #c4c4c4;
+}
+.copyright{
+	padding: 10px;
+}
+.sow-slider-pagination{
+text-align:center !important;
+}
+#small-slider .sow-slider-base .sow-slide-nav{
+	left: 2%;
+	top: 35%;
+	padding: 10px 15px;
+	background: red;
+}
+#small-slider .sow-slider-base .sow-slide-nav.sow-slide-nav-next{
+    right: inherit;
+    top: 55%;	
+	background: #fff;
+}
+#small-slider .sow-slider-base .sow-slide-nav.sow-slide-nav-next a{
+	color: #ccc;
+}
+#small-slider .sow-slider-pagination{
+	display: none !important;
+}
+#services-section  .sow-icon-typicons{
+	font-size: 2.5em !important;
+}
+#services-section  .textwidget h5{
+	font-weight: bold;
+}
+#services-section .sow-icon-typicons:after {
+    background: linear-gradient( #e214ac, #FF5722),url(https://placeimg.com/100/100/tech);
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+    margin-top: -12px;
+    background-blend-mode: color;
+}
+#services-section .sow-features-feature:first-child .sow-icon-typicons::after{
+	background:linear-gradient( #e214ac, #FF5722),url(https://placeimg.com/100/100/nature);
+}
+#services-section .sow-features-feature:last-child .sow-icon-typicons::after{
+	background:linear-gradient( #e214ac, #FF5722),url(https://placeimg.com/100/100/animals);
+}
+#services-section .sow-more-text a,button{
+    padding: 1em 2em;
+    background: transparent;
+    border: 1px solid #2b2b2a;
+	text-decoration: none;
+}
+.ow-button-base a.ow-button-hover:hover {
+	background: transparent !important;
+	color: initial !important;
+}
+ @media (max-width: 1199px) {
+	footer div[class*='col-']{
+		margin-top: 2em;
+	}
+	#footer-sidebar3{
+		clear: left;
+	}
+}
+@media (max-width: 992px) {
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0;
+       background-color: transparent;
+       border: 0;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+
+  .so-widget-sow-features-default-fde635502326 .sow-features-list.sow-features-responsive {
+    margin: 0;
+  }
+  .so-widget-sow-features-default-fde635502326 .sow-features-list.sow-features-responsive .sow-features-feature {
+    width: 100% !important;
+    float: none;
+    margin-bottom: 40px;
+  }
+  .so-widget-sow-features-default-fde635502326 .sow-features-list.sow-features-responsive .sow-features-feature:last-child {
+    margin-bottom: 0px;
+  }
+  .so-widget-sow-features-default-fde635502326 .sow-features-list.sow-features-responsive .sow-features-clear {
+    clear: none;
+  }
+}
