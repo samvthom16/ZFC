@@ -1,3 +1,4 @@
+<?php /* Template Name: Non Site Origin Template */ ?>
 <?php get_header();?>
 <?php global $post;?>
 <div class="container-fluid">
