@@ -66,17 +66,18 @@ footer{
 #footer-sidebar3 .sow-features-feature{
 	width: auto !important;
     margin-left: 12px;
-	margin-bottom: 0;
+	margin-bottom: 1em;
 }
 #footer-sidebar3 .sow-features-feature .textwidget{
 	margin-left: 1em;
 }
 #footer-sidebar3 .sow-icon-fontawesome{
-	top: 18px;
+	top: 8px;
 }
 #footer-sidebar4 li, footer .widget-title{
 	list-style: none;
 	text-transform: uppercase;
+    margin-bottom: 1em;
 }
 #footer-sidebar4  .sow-features-list{
 	margin: 0;
