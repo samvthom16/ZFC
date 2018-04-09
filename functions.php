@@ -28,4 +28,7 @@
 		return $sp_nav_menu_options;
 	});
 		
-	
+	add_filter('posts_query_atts', function( $atts ){
+	$atts['title'] = '';
+	return $atts;
+});

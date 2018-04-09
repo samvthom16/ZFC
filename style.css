@@ -180,6 +180,13 @@ text-align:center !important;
 	background: transparent !important;
 	color: initial !important;
 }
+.carousel-inner>.item{
+	height: 250px;
+	background: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
  @media (max-width: 1199px) {
 	footer div[class*='col-']{
 		margin-top: 2em;
