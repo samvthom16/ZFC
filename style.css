@@ -40,9 +40,7 @@ a{
   display: flex;
   flex-direction: column;
 }
-.white-bg {
-    background-color: #fff;
-}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #b3b3b3;
 }
@@ -93,13 +91,15 @@ footer{
 .copyright{
 	background: #bd1721;
 }
-.rounded{
+.rounded,.rounded>.avatar{
 	border-radius:50%;
 	width: 2.5em;
 	height: 2.5em;
 	line-height: 2.5em;
 	margin-right: 0.5em;
 	text-align: center;
+	display: inline-block;
+	color: #fff;
 }
 .twitter-blue{
     background-color: #1dcaff;
@@ -128,6 +128,22 @@ footer{
 }
 .sow-slider-pagination{
 text-align:center !important;
+}
+
+.card-img{
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //margin-bottom: 20px;
+    height: 200px;
+    //width: 100%;
+    max-height: none;
+    position: relative;
+	display: block;
+}
+.ht-350{
+	height: 350px;
 }
 #small-slider .sow-slider-base .sow-slide-nav{
 	left: 2%;
