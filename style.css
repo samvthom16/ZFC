@@ -21,7 +21,9 @@ a{
 	color: inherit;
 	line-height: normal;
 }
-
+.overlay {
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
 .no-gutter , #footer-sidebar4 ul {
     padding-right:0;
     padding-left:0;
@@ -137,9 +139,6 @@ text-align:center !important;
     background-size: cover;
     height: 300px;
 }
-.wd-300{
-	width: 300px;
-}
 #small-slider .sow-slider-base .sow-slide-nav{
 	left: 2%;
 	top: 35%;
@@ -245,6 +244,10 @@ text-align:center !important;
 }
 .collapse-button:before {
     content: "\2212";
+}
+
+.ht-200{
+	height: 200px;
 }
  @media (max-width: 1199px) {
 	footer div[class*='col-']{

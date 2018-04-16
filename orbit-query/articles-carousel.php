@@ -26,7 +26,7 @@
 			}
 		?>	
 		
-		<div class="item <?php if ($index == 0) { echo ' active'; } ?>" style="background-image:url('<?php echo $image; ?>')">
+		<div class="overlay item <?php if ($index == 0) { echo ' active'; } ?>" style="background-image:url('<?php echo $image; ?>')">
 			<div class="carousel-caption">
 				<h5>LATEST UPDATES</h5>
 				<h2>
