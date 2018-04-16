@@ -14,10 +14,11 @@
 			}
 		?>	
 		</small>
-		
+			<?php $i=0; ?>
 			<?php if(have_posts()):while ( have_posts() ) : the_post();?> 
+			<?php $i++; ?>
 		<div class="media">
-		  <div class="media-left">		  
+		  <div class="media-left pad-left">		  
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 			  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 				<a href="<?php the_permalink(); ?>" class="card-img media-object bottom-buffer wd-300" style="background-image:url(<?php echo $image[0]?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
@@ -30,6 +31,10 @@
 				<span class="fb-blue rounded"><i class="fa fa-lg fa-facebook"></i>
 			</div>
 			<?php the_excerpt(); ?>
+			<button data-toggle="collapse" data-target="#demo<?=$i?>" class="glyphicon collapsed bottom-buffer collapse-button"></button>
+			<div id="demo<?=$i?>" class="collapse">
+				<?php the_content(); ?>
+			</div>
 		  </div>
 		</div>
 		

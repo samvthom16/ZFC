@@ -130,20 +130,12 @@ footer{
 text-align:center !important;
 }
 
-.card-img{
+.card-img,.carousel-inner>.item{
     background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    //margin-bottom: 20px;
-    height: 200px;
-    //width: 100%;
-    max-height: none;
-    position: relative;
-	display: block;
-}
-.ht-350{
-	height: 350px;
+    height: 300px;
 }
 .wd-300{
 	width: 300px;
@@ -199,40 +191,38 @@ text-align:center !important;
 	background: transparent !important;
 	color: initial !important;
 }
-.carousel-inner>.item{
-	height: 250px;
-	background: #000;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.carousel-control{
-	z-index: 1;
-	background-image: none !important;
-	width: 0;
-	left: 10%;
-}
 .carousel-control .glyphicon-chevron-left{
-	    top: 28%;
-		background: #f32330;
+	    top: 20%;
+		background: #ee292a;
 }.carousel-control .glyphicon-chevron-right{
-	    top: 58%;
+	    top: 45%;
 		background: #fff;
 }
 .carousel-control  .glyphicon{
 	line-height: 2;
 	width: 2em;
 	height: 2em;
+	left: 0;
+	right: 0;
+	margin: 0;
 }
 .right.carousel-control{
-	left: 12.15%;
+	left: 0%;
+	right: unset;
+}
+.carousel-control{
+	z-index: 1;
+	background-image: none !important;
+	width: 7%;
+	left: 3% !important;	
 }
 .carousel-caption{
 	text-align: left;
 	left: 15%;
 	right: 0;
-	top: 5%;
+	top: 0;
 	bottom: 0;
+	margin-left: 3%;
 }
 .carousel-caption .btn{
 	border-radius: 0;
@@ -242,8 +232,19 @@ text-align:center !important;
 	background: transparent;
 	color: inherit;
 }
-.media-left{
+.pad-left{
 	padding-right: 2em;
+}
+.collapse-button{
+	background: #ee292a;
+	border: 0;
+	color: #fff;
+}
+.collapse-button.collapsed:before {
+    content: "\2b";
+}
+.collapse-button:before {
+    content: "\2212";
 }
  @media (max-width: 1199px) {
 	footer div[class*='col-']{

@@ -4,8 +4,8 @@
 	<div class="row">
 		<div class="col-md-6">
 			<?php if(have_posts()):while ( have_posts() ) : the_post();?> 
-			<h1 class="post-title"><strong><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></strong></h1>
-			<p class="text-muted">Meta:</p>
+			<h1 class="post-title"><strong><?php the_title_attribute(); ?></strong></h1>
+			<p class="text-muted">Meta: <?php echo get_the_excerpt(); ?></p>
 			<div class="media-left">
 				<a href="<?php bloginfo('url');?>" class="rounded">
 					<?php echo get_avatar(32); ?>
@@ -15,15 +15,15 @@
 				<span class="media-heading"><?php the_author_posts_link(); ?></span>
 				<div class="post-date"><?php echo get_the_date( 'M d' ); ?></div>
 			</div>
-			<div class="top-buffer">
+			<div class="top-buffer bottom-buffer">
 				<span class="twitter-blue rounded"><i class="fa fa-lg fa-twitter"></i></span>
 				<span class="fb-blue rounded"><i class="fa fa-lg fa-facebook"></i>
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-5">
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 			  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-				<a href="<?php the_permalink(); ?>" class="card-img overlay bottom-buffer ht-350" style="background-image:url(<?php echo $image[0]?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
+				<div class="card-img overlay bottom-buffer" style="background-image:url(<?php echo $image[0]?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></div>
 			<?php endif; ?>
 		</div>
 		<div class="col-md-10 col-md-offset-1 top-buffer">
