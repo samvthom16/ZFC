@@ -22,8 +22,9 @@
 		</div>
 		<div class="col-md-5">
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
-			  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-				<div class="card-img overlay bottom-buffer" style="background-image:url(<?php echo $image[0]?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></div>
+			  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>			  
+				<div class="card-img" style="background-image:url(<?php echo $image[0]?>);"></div>
+				<small class="text-muted"><?php echo get_post(get_post_thumbnail_id())->post_excerpt;  ?></small>
 			<?php endif; ?>
 		</div>
 		<div class="col-md-10 col-md-offset-1 top-buffer">
