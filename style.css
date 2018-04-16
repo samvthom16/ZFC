@@ -1,4 +1,4 @@
-/*
+	/*
 Theme Name: ZFC
 Template: sputznik-core-wp-theme 
 Theme URI: http://sputznik.com
@@ -241,6 +241,9 @@ text-align:center !important;
 .carousel-caption .btn:hover{
 	background: transparent;
 	color: inherit;
+}
+.media-left{
+	padding-right: 2em;
 }
  @media (max-width: 1199px) {
 	footer div[class*='col-']{
