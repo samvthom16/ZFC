@@ -3,13 +3,13 @@
 		<h2><strong><?php _e(single_cat_title( '', false ));?></strong></h2>
 		<small class="text-muted">Text</small>		
 		<hr>
-		<small class="bottom-buffer"><strong class="text-muted">Related Topics</strong>
+		<small class="bottom-buffer"><strong class="text-muted">Related Topics: </strong>
 		<?php
 			$posttags = get_the_tags();
-			$sep='';
 			if ($posttags) {
 				foreach($posttags as $tag) {					
-					echo  '<a href="'.get_tag_link($tag->term_id).'" >'.$tag->name.'</a>';
+					echo $sep . '<a href="'.get_tag_link($tag->term_id).'" > '.$tag->name.'</a>';
+					$sep = ', ';
 				}
 			}
 		?>	
