@@ -3,7 +3,7 @@ Theme Name: ZFC
 Template: sputznik-core-wp-theme 
 Theme URI: http://sputznik.com
 Description: Responsive one page WP theme for Zero Fatality Corridor.
-Version: 4.16
+Version: 4.18
 Author: Meenu Maria (Sputznik)
 Author URI: http://sputznik.com
 
@@ -245,7 +245,10 @@ text-align:center !important;
 .collapse-button:before {
     content: "\2212";
 }
-
+.main-content p, .main-content li {
+    font-size: 16px !important;
+    line-height: 24px;
+}
 .ht-200{
 	height: 200px;
 }
@@ -257,7 +260,10 @@ text-align:center !important;
 		clear: left;
 	}
 }
-@media (max-width: 992px) {
+@media (max-width: 1048px) {
+	.navbar-brand>img{
+		width: 80%;
+	}
 	.navbar-header {
         float: none;
     }
