@@ -16,8 +16,9 @@
 				<div class="post-date"><?php echo get_the_date( 'M d' ); ?></div>
 			</div>
 			<div class="top-buffer bottom-buffer">
-				<span class="twitter-blue rounded"><i class="fa fa-lg fa-twitter"></i></span>
-				<span class="fb-blue rounded"><i class="fa fa-lg fa-facebook"></i>
+				<span class="twitter-blue rounded"><a href="https://twitter.com/intent/tweet?text=<?php echo get_the_title_attribute();?> &nbsp; <?php the_permalink(); ?>" data-show-count="false"><i class="fa fa-lg fa-twitter"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+				<span class="fb-blue rounded" data-href="<?php echo get_permalink($post->ID); ?>" data-layout="button" data-size="small" data-mobile-iframe="true">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink($post->ID)); ?>&t=>?php the_title_attribute();?>"<i class="fa fa-lg fa-facebook"></i></a>
 			</div>
 		</div>
 		<div class="col-md-5">

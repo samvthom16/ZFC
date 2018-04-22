@@ -27,8 +27,9 @@
 		  <div class="col-sm-9">
 			<h4><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 			<div>
-				<span class="twitter-blue rounded"><i class="fa fa-lg fa-twitter"></i></span>
-				<span class="fb-blue rounded"><i class="fa fa-lg fa-facebook"></i>
+				<span class="twitter-blue rounded"><a href="https://twitter.com/intent/tweet?text=<?php the_title_attribute();?> &nbsp; <?php the_permalink(); ?>" data-show-count="false"><i class="fa fa-lg fa-twitter"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+				<span class="fb-blue rounded" data-href="<?php echo get_permalink($post->ID); ?>" data-layout="button" data-size="small" data-mobile-iframe="true">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink($post->ID)); ?>&t=>?php the_title_attribute();?>"><i class="fa fa-lg fa-facebook"></i></a>
 			</div>
 			<h5><?php echo get_the_excerpt(); ?></h5>
 			<button data-toggle="collapse" data-target="#demo<?=$i?>" class="glyphicon collapsed bottom-buffer top-buffer collapse-button"></button>
