@@ -45,7 +45,7 @@
 					<div class="col-md-4">
 						<?php if (has_post_thumbnail( $post->ID ) ): ?>
 						  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-							<a href="<?php the_permalink(); ?>" class="card-img overlay bottom-buffer" style="background-image:url(<?php echo $image[0]?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
+							<a href="<?php the_permalink(); ?>" class="card-img bottom-buffer" style="background-image:url(<?php echo $image[0]?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
 						<?php endif; ?>
 					<h3><strong><a href="<?php the_permalink(); ?>"><?php  the_title(); ?></a></strong></h3>
 					<p class="text-muted"><?php echo  get_the_excerpt(); ?></p>
