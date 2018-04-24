@@ -138,6 +138,7 @@ text-align:center !important;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+	display: block;
 }
 #small-slider .sow-slider-base .sow-slide-nav{
 	left: 2%;
