@@ -12,7 +12,14 @@
 	});
 	
 	
+	add_filter('sp_header2_template', function($temp){
 		
+		$temp = get_stylesheet_directory()."/partials/header.php";
+		
+		
+		return $temp;
+	});
+	
 	add_filter('posts_query_atts', function( $atts ){
 	$atts['title'] = '';
 	return $atts;
