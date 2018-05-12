@@ -300,6 +300,7 @@ text-align:center !important;
         display: block;
 		position: relative;
     top: 4em;
+    margin-top: 0;
     margin-right: -5%;
     }
     .navbar-collapse {
@@ -360,6 +361,12 @@ text-align:center !important;
 @media (max-width: 595px) {
 	.navbar-toggle{
     
+     margin-top: 0 !important;
     top: 9em;
+}
+.tagline {
+    margin: 0px;
+	margin-top: 3%;
+     margin-left: -8px;
 }
 }
