@@ -286,7 +286,7 @@ text-align:center !important;
 		clear: left;
 	}
 }
-@media (max-width: 1065px) {
+@media (max-width: 1100px) {
 	.navbar-brand>img{
 		width: 80%;
 	}
@@ -353,11 +353,7 @@ text-align:center !important;
     clear: none;
   }
 }
-@media (max-width: 767px) {
-	.navbar-toggle{
-    
-	}
-}
+
 @media (max-width: 595px) {
 	.navbar-toggle{
     
@@ -368,5 +364,6 @@ text-align:center !important;
     margin: 0px;
 	margin-top: 3%;
      margin-left: -8px;
+	margin-right: 3%;
 }
 }
