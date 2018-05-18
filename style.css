@@ -361,7 +361,7 @@ text-align:center !important;
 
 @media (max-width: 595px) {
 	.navbar-toggle{
-    
+    left: 15px;
      margin-top: 0 !important;
     top: 9em;
 }
